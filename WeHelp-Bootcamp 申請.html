@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeHelp Bootcamp</title>
+<link href='https://css.gg/corner-down-right.css' rel='stylesheet'>
+<link href="https://lh3.googleusercontent.com/Hy6gBH4ci_Hh_QhbU1k56Lx1D_-TMqxConjTrgrHedL768CLdEkZdTqEvhX0xBMjro0RvSmzzBceePbryyQ0MLxZItMc5KB8B1kAgRVxE6kGDGMyAHYziCsNFSlUsLb9PJcHqODwHHlkPhlwrBA2RrKiNkAJaa52X9Yxz-D0TnfsxSIg-pP5_WUpe1wKoUiNV29VqVnTjBKCA9pvb--p_RhFEHAcXIStE_ARBGzp3izGIf5B8jaleAXWE9wEeWY_9E2yX_-M_aN6fT72lyvQLJLRdB6xXHDTrubjkV-wLzLKqjNe_UyqSotNqyUYlMJAeKIelH3kY6DtDskJX2n9AAWOFhtQ9TBS7G7wGPwDRs-r7kFbzdXoZcHQ3iZzK0ofnJ-91Y5E2Ymi4BtSsPBxCnNkeJBOgs7LMu6SJnC52kE82nXLlP2CGioTm6byL2S9dzsDR76g04i2_weWS5c9JKsxa_XtXyGD9IQh2t5zoVqVLho8KIcaPeuVJGyrt-tCfYSIpk1Cjw5MlkRNNel2MoKukMm4XsB1RBjNqMJ7aP_PhFC1qhGVbKCu_i1RbDF31SZ4ph2raxslH3YB4HoV0lXLMd74g1Vi9BVA7hqgznv6T1z0dHAmyEcLCDhAOwsDXWviSyRoi_bP4zwqxeA6Nb2kiSyVjh636IPevB20nEwa1woGKi4CocpZJN44AVXwC2hP1zOpp2_NtnVfKcn_AURPitUUJdbXKUB1opZWLpx0CO9alscRnkVpOw35kmKtFMtly0HEX3Zf-KTbezfb-xB68Q_FhSgY0rwT6Z1TMjtyiAKoztc7weHh_38uYDpWb6lpM_LAHR6Q5flFLDPlbglvLfHI8L5LgB9BmrdqgehIZWwZB1ad1wBh-SqlT2gtpjCwxHRxyujU-wluHrgJNH6kr8Hxvh6A6UwMMmZrN_WC-mshamG5qZo7c1cTSd29PqGoywjNoDNSJyqmMg=s64-no?authuser=6" rel="shortcut icon"/>
+<script src="https://kit.fontawesome.com/04248b5ba7.js" crossorigin="anonymous"></script>
+<style>
+body{
+font-family: Montserrat,Microsoft JhengHei;
+margin: 0;
+padding: 0;
+background: url(https://s3.amazonaws.com/caself/products/photos/000/001/693/original/vines_cyc.jpg?1519138489);
+}
+a {
+color: #000;
+text-decoration:none;
+}
+a:hover {
+    opacity: 0.5;
+}
+/*ul li{
+list-style:none;
+}*/
+.page{
+width: 1200px;
+max-width: 95%;
+margin: 0px auto;
+padding:0 5px 0 5px;
+display:flex;
+}
+h1 {
+padding: 1.5rem;
+text-align: center;
+color: #1E1E1E;
+background: #D7E5CC;
+margin: 0;
+font-size: 4vmin;
+}
+h1 span {
+background: #AFBF75;
+padding: 10px;
+border-radius: 5px;
+color: #FFF;
+margin: 0;
+}
+h2{
+color: #515151;
+font-size: 1.1rem;
+font-weight: bold;
+background-color: #ffffffc9;
+border-left: 8px solid #AFBF75;
+border-bottom: solid 3px #e1e1e1;
+padding: 10px 15px 5px 15px;
+display: inline-block;
+}
+.part{
+display: flex;
+align-items: baseline;
+}
+.part p{
+color: #737373;
+font-size: 1.7vmin;
+border: dashed 2px #dadada;
+padding: 10px;
+background: #FFF;
+line-height: 1.5rem;
+margin-left: 5px;
+border-radius: 15px;
+}
+.part p span{
+color: #7a9f5d;
+font-weight: bold;
+margin: 0 4px;
+}
+h1,h2,li{
+border-radius: 2px;
+}
+.fa-regular.fa-comment-dots{
+-moz-transform:scaleX(-1);
+-webkit-transform:scaleX(-1);
+-o-transform:scaleX(-1);
+transform:scaleX(-1);
+color: #FFF;
+font-size: 1.5rem;
+background: #9abd7e;
+border-radius: 50%;
+padding: 10px;
+}
+.content{
+flex: auto;
+}
+.sidebar{
+flex: none;
+margin: 0 25px;
+width: 300px;
+}
+.sidebar img {
+width: 200px;
+height: 200px;
+border-radius: 50%;}
+.sidebar .scope{
+font-size: 1.1rem;
+font-weight: bold;
+text-align: center;
+background: #fff9;
+padding: 15px 0;
+box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+border-radius: 5px;
+margin-top: 15px;
+}
+ul.menu {
+font-size: 1.3vmin;
+text-align: left;
+margin: 0;
+padding: 0px 35px;
+line-height: 1.5rem;
+}
+ul.menu li::marker{
+color: #839a2d;
+font-size: 1rem;
+}
+ul.menu a {
+color: #515151;
+}
+.nickname{
+color: #65752b;
+margin-bottom: 10px;
+display: block;
+}
+.motto{
+display: flex;
+font-size: .85rem;
+font-style: italic;
+color: #4e4e4e;
+justify-content: center;
+align-items: center;
+text-align: left;
+}
+.motto .fa-solid.fa-pen{
+color: #9abd7e;
+font-size: 1.4rem;
+margin-right: 10px;
+}
+footer{
+background: #D7E5CC;
+margin-top: 5rem;
+height: auto;
+min-height: 150px;
+text-align: center;
+}
+.ft-icon {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.ft-icon i {
+    font-size: 2rem;
+    margin: 10px;
+}
+/*max*/
+@media (max-width: 1000px){
+.content,.sidebar {width: 100%;flex: none;}
+.sidebar {margin: 1rem auto;}
+.page{flex-wrap: wrap;}
+}
+/*min*/
+@media (min-width: 1001px){
+.sidebar{position: sticky;top: 5%;align-self: flex-start;}  
+}
+</style>
+</head>
+<body>
+    <h1><span>WeHelp</span> Bootcamp申請</h1>
+<div class="page">
+    <div class="sidebar">
+        <div class="scope">
+            <div class="avatar">    
+                <img src="https://lh3.googleusercontent.com/KP7lkpvejqOmTMDo0x9Ua1sQAiwbtb6xbFlvNJj0-rNpHx_fGJLiH9EaRpUh86gaaHr2Qqqr7uiU-dskmXU_vofFmDx4kHRYXJf8QRMk1qZKxN1TVFCTXar8NYjSwOotsXLKAmdD2bFYGunegqvF3u5Y8OYG_-Puy9JoxeLFCZGCCPSi2UrkNjZRe8ZQbNTLnEDak2QIuaf_Uzh-itST4VbJFGDwoABDf92m5X7PPr8E6ycAUDi4nI1rYEM4-Wd5jHD51CIBzgIwZLLx37eFcebRY1N5hUWgfdTsSaEgwcr5qroPycsPcimnSIwsOo5h402U6Q9Rf5fdXYDpqVR5RxWz_lr-hTUKLbH-5C8r--wAWcLYFxFSNFQmdEsV6_6F-7ccnmyJIuX8jthFAFGl9Lx5YOj-JPg4Ym7lZx9ytEQLlSxdDVbfBH411nEDj_Ok-yJZUYZ8czWLQwMvkwkQihQKxjPeKzF0CChctWn3dtQiRST2NTA4Ya-K1Wm0jgo7l5N0QJ-PgkTsWxFW80bkqrthahoF3YfsAVMn9E9-ZPwmKJHbSYeUnpjXwgka6aoq0iuvmLMR7GAm0cKxAUJ6YekKmglNrL5D4zuXTdkVPifFkU2wsZTtMSWdab_wowOKy6F-bLzKuzcfkIPugOgi80AEiWlRmFoo8_bK5QO5ydcyFSZQW6klf9BgLmucIUNwcqGa5Vn0WYXZ67tnkhh7O99UEs6d-wSq583DnMILsq3oialHh73ixNSM0BupFLOO3An2D1Rt1LYtZVZBohPGrCxBQqm7WU5LzZOIYXNNWm6g_Wx8XUJcqjkfVYKbJyasOTI6MMvvkCcJgN0mjL1bao8pSdyxavYAoBy3jSu2H8UOxS411T4b5imeposZksNIBoo28tvNSaqn_dWYchFHVEaTb-4cn_1nZA5kjBBhnX1ndBB4BBOa15qLwOywGBg-Zah1CbykNuEA_6aPHQ=s828-no?authuser=6" alt="">
+            </div>
+            <span class="nickname">Yuan Chao</span>
+            <div class="motto">
+                <sub><i class="fa-solid fa-pen"></i></sub>
+                <span>你不一定要很厲害，才能開始；<br>但你要開始，才能很厲害。</span>
+            </div>
+        </div>
+        <div class="scope">
+            <ul class="menu">
+                <li><a href="#menu-01">兩百字內的個人簡介。</a></li>
+                <li><a href="#menu-02">為了成為軟體工程師，曾做過什麼努力？若有具體專案作品請分享給我們。</a></li>
+                <li><a href="#menu-03">如果參與這個計畫，會怎麼安排學習時間？</a></li>
+                <li><a href="#menu-04">是否有想要加入的軟體公司？為什麼想加入該公司？</a></li>
+                <li><a href="#menu-05">請描述一件你曾經碰到最困難的事情，如何克服？</a></li>
+                <li><a href="#menu-06">關於這份申請網頁，請分享一個你開發時的技術心得。</a></li>
+                <li><a href="#menu-07">從上次提出申請至今，多做了哪些努力？( 第一次申請不用回答 )</a></li>
+                <li><a href="#menu-08">其他想要對我們說的事情？</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <h2 id="menu-01">兩百字內的個人簡介。</h2>
+        <div class="part">
+            <i class="fa-regular fa-comment-dots"></i>
+                <p>
+                    小弟今年27歲，目前待業中。<br>
+                    原本的工作是從事<span>PVC鍍膜</span>相關工作，但受近幾年疫情影響，公司出現一些問題，便決定轉換跑道。<br>
+                    由於本身會一些基本的電腦組裝，被老闆要求製作一個公司的官網，或許覺得都是電腦相關的我應該會懂，當時也沒多想，錢來就幹。<br>
+                    根據教學使用<span>Wordpress</span>建立和購買域名，主機等等...<br>
+                    算是第一次接觸到了<span>PHP HTML CSS JS</span>，整個過程覺得蠻有趣的，完成後也順利交差。<br>
+                    辭職後開始自學<span>Web</span>相關知識，決定朝著這個方向努力！
+                </p>
+        </div>
+        <h2 id="menu-02">為了成為軟體工程師，曾做過什麼努力？</h2>
+        <div class="part">
+            <i class="fa-regular fa-comment-dots"></i>
+                <p>
+                    主要是透過<span>Udemy</span>,<span>YouTube</span>,上的課程自我學習，<br>
+                    本身英文能力較差，大多選擇中文課程。
+                </p>
+        </div>
+        <h2 id="menu-03">如果參與這個計畫，會怎麼安排學習時間？</h2>
+        <div class="part">
+            <i class="fa-regular fa-comment-dots"></i>
+                <p>
+                    包含任務和持續自主學習，一週預計花60~70小時左右。
+                </p>
+        </div>
+        <h2 id="menu-04">是否有想要加入的軟體公司？為什麼想加入該公司？</h2>
+        <div class="part">
+            <i class="fa-regular fa-comment-dots"></i>
+                <p>
+                    目前還不清楚
+                </p>
+        </div>
+        <h2 id="menu-05">請描述一件你曾經碰到最困難的事情，如何克服？</h2>
+        <div class="part">
+            <i class="fa-regular fa-comment-dots"></i>
+                <p>
+                    應該是第一次用<span>Wordpress</span>架站的時候遇到的那些事。<br>
+                    當初主機是選擇<span>GCP（Google Cloud Platform）VPS</span>(單純因為有提供1年$300的測試額度，之後才知道有<span>LocalHost</span>這東東)<br>
+                    印象中那時候裝了某個優化的<span>Plugin</span>導致前後台都掛了進不去，然後開始找解決辦法，什麼用<span>Cpanel</span>找文件路徑把<span>Plugin</span>先停用，找了半天找不到。<br>
+                    後來終於搞懂我的<span>VPS</span>沒有<span>Cpanel</span>，研究了一下<span>SSH</span>和<span>FTP</span>，順利連到自己的主機上，停用了出問題的<span>Plugin</span>，網站才終於正常。<br>
+                    後續包括<span>域名</span>,<span>DNS</span>,<span>CloudFlare</span>,<span>主機IP</span>，透過網路上的資源慢慢摸索，網站上線後是選擇<span>共享主機</span>方便日後維護。<br>
+                    中間不斷的遇到問題，然後找方法，一直循環，整個過程對我來說不是一件容易的事。
+                </p>
+        </div>
+        <h2 id="menu-06">關於這份申請網頁，請分享一個你開發時的技術心得。</h2>
+        <div class="part">
+            <i class="fa-regular fa-comment-dots"></i>
+                <p>
+                    一開始關於頁面佈局也是想了一陣子，後來是用<span>Figma</span>軟體先將我想要的頁面佈局畫出來。
+                    按照畫的樣子，依序添加<span>HTML</span>和<span>CSS</span>，慢慢的讓網頁呈現我想要的樣子。
+
+                </p>
+        </div>
+        <h2 id="menu-07">從上次提出申請至今，多做了哪些努力？( 第一次申請不用回答 )</h2>
+        <div class="part">
+            <i class="fa-regular fa-comment-dots"></i>
+                <p>
+
+                </p>
+        </div>
+        <h2 id="menu-08">其他想要對我們說的事情？</h2>
+        <div class="part">
+            <i class="fa-regular fa-comment-dots"></i>
+                <p>
+                    在學習的過程找到了<span>彭彭網頁前端工程教學</span>，也注意到了<span>WeHelp Bootcamp</span>這個計畫（大概是第2屆快結束的時候）。<br>
+                    深入了解後就決定一定要報名今年的<span>WeHelp Bootcamp</span>！<br>
+                    也感謝<span>彭彭</span>提供這麼多免費的資源讓新手學習。
+                </p>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="ft-icon">
+        <a href="#" title="demo"><i class="fa-brands fa-github"></i></a>
+        <a href="#" title="demo"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" title="demo"><i class="fa-brands fa-line"></i></a>
+        <a href="#" title="demo"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <p>&copy2022</p>
+</footer>
+</body>
+</html>
